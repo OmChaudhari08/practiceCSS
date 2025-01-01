@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 4px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+            padding: 20px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 4px 20px;
+            margin: 4px 4px;
+        }
+
+        .navbar a {
+            color: aliceblue;
+            text-decoration: none;
+            padding: 9px 38px;
+        }
+
+        .navbar input {
+            border-radius: 4px;
+            padding: 8px 5px;
+            float: right;
+        }
+
+        .logo {
+            float: left;
+            padding: 4px 4px;
+            height: 32px;
+            margin-right: 20px;
+        }
+
+        .section img {
+            width: 22%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .section {
+            position: relative;
+            background-color: black;
+            height: 300px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .section h2 {
+            color: white;
+        }
+
+        .section img:first-of-type {
+            position: absolute;
+            bottom: 47px;
+            transform: rotate(26deg);
+            transition: transform 0.3s ease;
+            left: -92px;
+        }
+
+        /* Keep the second image aligned with flexbox */
+        .section img:last-of-type {
+            position: relative;
+            border-radius: 50%;
+            /* Keep the circular shape */
+            width: 22%;
+            height: auto;
+        }
+
+        .red-strip {
+            position: absolute;
+            top: 0px;
+            right: 66px;
+            width: 170px;
+            height: 100%;
+            background-color: red;
+        }
+
+        .section2 p {
+            padding: 27px 123px;
+            font-family: 'Georgia ', 'Arial Narrow', Arial, sans-serif;
+            font-size: 21px;
+            line-height: 33px;
+        }
+
+        .section2 span {
+            font-weight: bold;
+        }
+
+        footer {
+            padding: 16px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Georgia', Courier, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <img class="logo" src="logo3.png">
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Games</a></li>
+
+                <div>
+                    <input type="text" name="search" id="search" placeholder="search">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1" class="section">
+        <img src="sword.png" alt="sword">
+        <h2>Miyamoto Musashi </h2>
+        <img class="main" src="image.jpeg" alt="miyo">
+        <div class="section1">
+            <img src="">
+            <div class="red-strip"></div>
+        </div>
+
+    </section>
+    <section id="section2" class="section2">
+        <p>
+            <SPAN>Miyamoto Musashi</SPAN> (born 1584, Mimasaka or Harima, Japan—died June 13, 1645, Higo) was a famous
+            Japanese soldier-artist of the early Edo (Tokugawa) period (1603–1867).
+            <br>
+
+            Man holding up a magnifying glass for a better look at the samurai swordsman Miyamoto Musashi, woodblock
+            print by Ichiyusai Kuniyoshi.
+            Man holding up a magnifying glass for a better look at the samurai swordsman Miyamoto Musashi, woodblock
+            print by Ichiyusai Kuniyoshi.
+            Musashi began his career as a fighter early in life when, at age 13, he killed a man in single combat. In
+            1600 he was on the losing side of the Battle of Sekigahara (which paved the way for establishing the
+            Tokugawa shogunate), becoming one of the rōnin (masterless samurai). In time he set out on a personal quest
+            to develop perfect sword technique. He invented the nitō ichi-ryū, the style of fencing with two swords, and
+            is often referred to today as kensai (‘‘sword saint’’). Musashi claimed to have fought in more than 60
+            individual sword fights, many of which were to the death and all of which he won.
+            <br>
+            Musashi’s most famous encounter took place in 1612, against his arch rival Sasaki Kojirō, a swordsman whose
+            skill was reported to be equal to his own. The contest took place on a small island off the coast of Japan.
+            While being rowed out to the dueling site, Musashi fashioned a wooden sword out of an oar. When the two
+            enemies finally met on the beach, Musashi quickly dispatched Kojirō with a well-placed blow to the head
+            using his wooden sword. After that, feeling that he had reached his peak as a swordsman, Musashi retired
+            from the dueling life, though he trained some students and helped to suppress the Shimabara Rebellion in
+            1637.
+        </p>
+    </section>
+
+    <footer class="footer">
+        <p>
+            Thanks for visting
+        </p>
+        <p>
+            <a href="#anime">Anime</a> |
+            <a href="#Movies">Movies</a> |
+            <a href="#Music">Music</a> |
+            <a href="Games">Games</a> |
+        </p>
+    </footer>
+</body>
+
+</html>
